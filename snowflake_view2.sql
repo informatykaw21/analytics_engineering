@@ -12,7 +12,7 @@ from products p
 inner join  orders o
 on p.product_id = o.product_id 
 inner join customers c
-on o.customer_id = c.customer_id
+on o.cust_id = c.cust_id
 group by 1,2,3,4
 order by 5 desc 
 ;

@@ -1,13 +1,13 @@
-Create or replace  view if not exists product_performance_per_state view AS
+Create or replace  view if not exists product_performance_view2 AS
 
 SELECT
 p.id
 , p.name
 , p.price
 , p.category,
-, sum(o.quantity) as sum_quantity
-, count(o.o_id) as count_orders
-, count(distinct c.states) as count_states
+, sum(o.quantity) as sum_quantities
+, count(o.order_id) as count_orders
+, count(distinct c.state) as count_states
 from products p 
 inner join  orders o
 on p.product_id = o.product_id 

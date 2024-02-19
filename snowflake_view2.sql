@@ -1,3 +1,11 @@
+
+/*
+purpose of data table: providing metrics for business team. 
+We can identify which products are selling well and where,
+so we can improve upon. 
+Sum of quantities are tracking impact of markjeting outreach of each product.
+*/
+
 Create or replace  view if not exists product_performance_view2 AS
 
 SELECT
